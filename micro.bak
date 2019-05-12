@@ -1,0 +1,764 @@
+EESchema Schematic File Version 4
+LIBS:cutoff-hardware-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Wall-IE Power Distribution Board"
+Date "2019-03-24"
+Rev "1.0r"
+Comp "George Brown"
+Comment1 "Bio Robots Team \"Congo\""
+Comment2 ""
+Comment3 "WITH REVIEW COMMENTS"
+Comment4 "Microcontroller Hardware"
+$EndDescr
+$Comp
+L power:+3.3V #PWR055
+U 1 1 5C754557
+P 8650 1950
+F 0 "#PWR055" H 8650 1800 50  0001 C CNN
+F 1 "+3.3V" H 8665 2123 50  0000 C CNN
+F 2 "" H 8650 1950 50  0001 C CNN
+F 3 "" H 8650 1950 50  0001 C CNN
+	1    8650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR056
+U 1 1 5C754563
+P 8650 3350
+F 0 "#PWR056" H 8650 3100 50  0001 C CNN
+F 1 "GND" H 8655 3177 50  0000 C CNN
+F 2 "" H 8650 3350 50  0001 C CNN
+F 3 "" H 8650 3350 50  0001 C CNN
+	1    8650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:NRF24L01_Breakout U42
+U 1 1 5C75456E
+P 8650 2650
+F 0 "U42" H 9128 2628 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 9128 2537 50  0000 L CNN
+F 2 "RF_Module:nRF24L01_Breakout" H 8800 3250 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 8650 2550 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    8650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J41
+U 1 1 5C75457C
+P 1000 3200
+F 0 "J41" H 1055 3667 50  0000 C CNN
+F 1 "USB_B_Micro" H 1055 3576 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1150 3150 50  0001 C CNN
+F 3 "~" H 1150 3150 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5C754589
+P 900 3800
+F 0 "#PWR041" H 900 3550 50  0001 C CNN
+F 1 "GND" H 905 3627 50  0000 C CNN
+F 2 "" H 900 3800 50  0001 C CNN
+F 3 "" H 900 3800 50  0001 C CNN
+	1    900  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5C754592
+P 2600 5700
+F 0 "#PWR049" H 2600 5450 50  0001 C CNN
+F 1 "GND" H 2605 5527 50  0000 C CNN
+F 2 "" H 2600 5700 50  0001 C CNN
+F 3 "" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C43
+U 1 1 5C7545A0
+P 1900 3700
+F 0 "C43" H 1992 3746 50  0000 L CNN
+F 1 "1u" H 1992 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1900 3700 50  0001 C CNN
+F 3 "~" H 1900 3700 50  0001 C CNN
+F 4 "Murata" H 0   0   50  0001 C CNN "MFR"
+F 5 "GRM188C81E105KA12D" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "CAPS 12" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5C7545A7
+P 1900 3900
+F 0 "#PWR047" H 1900 3650 50  0001 C CNN
+F 1 "GND" H 1905 3727 50  0000 C CNN
+F 2 "" H 1900 3900 50  0001 C CNN
+F 3 "" H 1900 3900 50  0001 C CNN
+	1    1900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR048
+U 1 1 5C7545B2
+P 2600 1700
+F 0 "#PWR048" H 2600 1550 50  0001 C CNN
+F 1 "+5V" H 2615 1873 50  0000 C CNN
+F 2 "" H 2600 1700 50  0001 C CNN
+F 3 "" H 2600 1700 50  0001 C CNN
+	1    2600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R41
+U 1 1 5C7545BA
+P 1600 3200
+F 0 "R41" V 1404 3200 50  0000 C CNN
+F 1 "22" V 1495 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 3200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2609223.pdf" H 1600 3200 50  0001 C CNN
+F 4 "TE" H 0   0   50  0001 C CNN "MFR"
+F 5 "CRGCQ0603J22R" H 0   0   50  0001 C CNN "MPN"
+F 6 "Onecall" H 0   0   50  0001 C CNN "SPR"
+F 7 "2861854" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 5C7545C1
+P 1600 3300
+F 0 "R42" V 1800 3300 50  0000 C CNN
+F 1 "22" V 1700 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 3300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2609223.pdf" H 1600 3300 50  0001 C CNN
+F 4 "TE" H 0   0   50  0001 C CNN "MFR"
+F 5 "CRGCQ0603J22R" H 0   0   50  0001 C CNN "MPN"
+F 6 "Onecall" H 0   0   50  0001 C CNN "SPR"
+F 7 "2861854" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 5C7545D6
+P 1800 2200
+F 0 "R43" V 1604 2200 50  0000 C CNN
+F 1 "10k" V 1695 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 2200 50  0001 C CNN
+F 3 "~" H 1800 2200 50  0001 C CNN
+F 4 "TE" H 0   0   50  0001 C CNN "MFR"
+F 5 "CRG0603F10K" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "RES 09" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1800 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR043
+U 1 1 5C7545DD
+P 1600 2100
+F 0 "#PWR043" H 1600 1950 50  0001 C CNN
+F 1 "+5V" H 1615 2273 50  0000 C CNN
+F 2 "" H 1600 2100 50  0001 C CNN
+F 3 "" H 1600 2100 50  0001 C CNN
+	1    1600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C41
+U 1 1 5C7545E5
+P 1800 5100
+F 0 "C41" H 1892 5146 50  0000 L CNN
+F 1 "100n" H 1892 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1800 5100 50  0001 C CNN
+F 3 "~" H 1800 5100 50  0001 C CNN
+F 4 "Kemet" H 0   0   50  0001 C CNN "MFR"
+F 5 "C0603C104K4RAC7081" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "CAPS 17" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5C7545EC
+P 1800 5300
+F 0 "#PWR046" H 1800 5050 50  0001 C CNN
+F 1 "GND" H 1805 5127 50  0000 C CNN
+F 2 "" H 1800 5300 50  0001 C CNN
+F 3 "" H 1800 5300 50  0001 C CNN
+	1    1800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR045
+U 1 1 5C7545F2
+P 1800 4900
+F 0 "#PWR045" H 1800 4750 50  0001 C CNN
+F 1 "+5V" H 1815 5073 50  0000 C CNN
+F 2 "" H 1800 4900 50  0001 C CNN
+F 3 "" H 1800 4900 50  0001 C CNN
+	1    1800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR050
+U 1 1 5C86DA3C
+P 2800 1700
+F 0 "#PWR050" H 2800 1550 50  0001 C CNN
+F 1 "+5VA" H 2815 1873 50  0000 C CNN
+F 2 "" H 2800 1700 50  0001 C CNN
+F 3 "" H 2800 1700 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR052
+U 1 1 5C86B48A
+P 3700 4700
+F 0 "#PWR052" H 3700 4450 50  0001 C CNN
+F 1 "GND" H 3705 4527 50  0000 C CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VBUS #PWR042
+U 1 1 5C878CC2
+P 1350 2900
+F 0 "#PWR042" H 1350 2750 50  0001 C CNN
+F 1 "VBUS" H 1365 3073 50  0000 C CNN
+F 2 "" H 1350 2900 50  0001 C CNN
+F 3 "" H 1350 2900 50  0001 C CNN
+	1    1350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J43
+U 1 1 5C87A29A
+P 9600 4600
+F 0 "J43" H 9706 4778 50  0000 C CNN
+F 1 "PROGRAM_PSU" H 9706 4687 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9600 4600 50  0001 C CNN
+F 3 "~" H 9600 4600 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    9600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR059
+U 1 1 5C87B3E0
+P 10100 4500
+F 0 "#PWR059" H 10100 4350 50  0001 C CNN
+F 1 "+5V" H 10115 4673 50  0000 C CNN
+F 2 "" H 10100 4500 50  0001 C CNN
+F 3 "" H 10100 4500 50  0001 C CNN
+	1    10100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR060
+U 1 1 5C87B403
+P 10300 4500
+F 0 "#PWR060" H 10300 4350 50  0001 C CNN
+F 1 "VBUS" H 10315 4673 50  0000 C CNN
+F 2 "" H 10300 4500 50  0001 C CNN
+F 3 "" H 10300 4500 50  0001 C CNN
+	1    10300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C44
+U 1 1 5C88FEE8
+P 9300 2150
+F 0 "C44" H 9392 2196 50  0000 L CNN
+F 1 "100n" H 9392 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 2150 50  0001 C CNN
+F 3 "~" H 9300 2150 50  0001 C CNN
+F 4 "Kemet" H 0   0   50  0001 C CNN "MFR"
+F 5 "C0603C104K4RAC7081" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "CAPS 17" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 5C88FEEF
+P 9300 2350
+F 0 "#PWR058" H 9300 2100 50  0001 C CNN
+F 1 "GND" H 9305 2177 50  0000 C CNN
+F 2 "" H 9300 2350 50  0001 C CNN
+F 3 "" H 9300 2350 50  0001 C CNN
+	1    9300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR057
+U 1 1 5C893E35
+P 9300 1950
+F 0 "#PWR057" H 9300 1800 50  0001 C CNN
+F 1 "+3.3V" H 9315 2123 50  0000 C CNN
+F 2 "" H 9300 1950 50  0001 C CNN
+F 3 "" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 5C9E1989
+P 8350 4600
+F 0 "#PWR054" H 8350 4350 50  0001 C CNN
+F 1 "GND" V 8355 4472 50  0000 R CNN
+F 2 "" H 8350 4600 50  0001 C CNN
+F 3 "" H 8350 4600 50  0001 C CNN
+	1    8350 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR053
+U 1 1 5C9E1A2B
+P 8350 4500
+F 0 "#PWR053" H 8350 4350 50  0001 C CNN
+F 1 "+5V" V 8365 4628 50  0000 L CNN
+F 2 "" H 8350 4500 50  0001 C CNN
+F 3 "" H 8350 4500 50  0001 C CNN
+	1    8350 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR051
+U 1 1 5C9F2F9D
+P 3700 4300
+F 0 "#PWR051" H 3700 4050 50  0001 C CNN
+F 1 "GND" V 3705 4172 50  0000 R CNN
+F 2 "" H 3700 4300 50  0001 C CNN
+F 3 "" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C42
+U 1 1 5C9F4A0B
+P 1900 2800
+F 0 "C42" V 1671 2800 50  0000 C CNN
+F 1 "100n" V 1762 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1900 2800 50  0001 C CNN
+F 3 "~" H 1900 2800 50  0001 C CNN
+F 4 "Kemet" H 0   0   50  0001 C CNN "MFR"
+F 5 "C0603C104K4RAC7081" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "CAPS 17" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    1900 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5C9F7C2B
+P 1700 2800
+F 0 "#PWR044" H 1700 2550 50  0001 C CNN
+F 1 "GND" V 1705 2672 50  0000 R CNN
+F 2 "" H 1700 2800 50  0001 C CNN
+F 3 "" H 1700 2800 50  0001 C CNN
+	1    1700 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R45
+U 1 1 5CA81BCA
+P 3500 4700
+F 0 "R45" V 3304 4700 50  0000 C CNN
+F 1 "1k" V 3395 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 4700 50  0001 C CNN
+F 3 "~" H 3500 4700 50  0001 C CNN
+F 4 "Multicomp" H 0   0   50  0001 C CNN "MFR"
+F 5 "MCWR06X102JTL" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "RES 05" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    3500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 5CA84DAF
+P 3500 4300
+F 0 "R44" V 3304 4300 50  0000 C CNN
+F 1 "1k" V 3395 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 4300 50  0001 C CNN
+F 3 "~" H 3500 4300 50  0001 C CNN
+F 4 "Multicomp" H 0   0   50  0001 C CNN "MFR"
+F 5 "MCWR06X102JTL" H 0   0   50  0001 C CNN "MPN"
+F 6 "George" H 0   0   50  0001 C CNN "SPR"
+F 7 "RES 05" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    3500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP5
+U 1 1 5C8E2EEA
+P 3600 3600
+F 0 "TP5" H 3859 3696 50  0000 L CNN
+F 1 "UART_RX" H 4150 3700 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3800 3600 50  0001 C CNN
+F 3 "~" H 3800 3600 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    3600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP6
+U 1 1 5C8E3030
+P 3600 3700
+F 0 "TP6" H 3859 3796 50  0000 L CNN
+F 1 "UART_TX" H 4150 3800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3800 3700 50  0001 C CNN
+F 3 "~" H 3800 3700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    3600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5C981BED
+P 8650 4700
+F 0 "J1" H 8623 4580 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 8623 4671 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8650 4700 50  0001 C CNN
+F 3 "~" H 8650 4700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    8650 4700
+	-1   0    0    1   
+$EndComp
+Text Label 3400 2300 0    50   ~ 0
+SCK
+Text Label 3400 2400 0    50   ~ 0
+MOSI
+Text Label 3400 2500 0    50   ~ 0
+MISO
+Text Label 8050 2350 2    50   ~ 0
+MOSI
+Text Label 8050 2450 2    50   ~ 0
+MISO
+Text Label 8050 2550 2    50   ~ 0
+SCK
+Text HLabel 3400 3900 2    50   Output ~ 0
+SERVO_EN
+Text HLabel 3400 2800 2    50   Output ~ 0
+POWER_EN
+Text HLabel 3400 3100 2    50   Input ~ 0
+pyBoard_WDG
+Text Label 3400 2600 0    50   ~ 0
+CE
+Text Label 3400 2200 0    50   ~ 0
+~SS
+Text Label 8050 2650 2    50   ~ 0
+~SS
+Text Label 8050 2850 2    50   ~ 0
+CE
+Text Label 2000 2100 1    50   ~ 0
+~RESET
+Text Label 3400 3600 0    50   ~ 0
+RX
+Text Label 3400 3700 0    50   ~ 0
+TX
+Text Notes 4550 3600 0    50   ~ 0
+Debug UART
+Text Label 1850 3300 0    50   ~ 0
+DuC-
+Text Label 1350 3200 0    50   ~ 0
+D+
+Text Label 1350 3300 0    50   ~ 0
+D-
+Text Notes 9600 4250 0    50   ~ 0
+Bridge for\nprogramming
+Text Notes 9600 2050 0    50   ~ 0
+Radio is 3V3 Supply\nInputs are 5V tolerant\nuC input threshold at 1.6V
+Text HLabel 3400 3200 2    50   Output ~ 0
+3V3_EN
+Text HLabel 3400 4900 2    50   Input ~ 0
+VBAT_SNS
+Text HLabel 3400 4800 2    50   Input ~ 0
+6V_SNS
+Text HLabel 3400 5100 2    50   Input ~ 0
+3V3_SNS
+Text HLabel 3400 5000 2    50   Input ~ 0
+BATT_ISNS
+Text Label 8350 4800 2    50   ~ 0
+SCK
+Text Label 8350 4900 2    50   ~ 0
+MOSI
+Text Label 8350 4700 2    50   ~ 0
+MISO
+Text Label 8350 4400 2    50   ~ 0
+~RESET
+Text Notes 8300 4250 0    50   ~ 0
+Single use programming pins\nfor bootloader installation
+Text Label 8050 2950 2    50   ~ 0
+RAD_IRQ
+Text Label 3400 2900 0    50   ~ 0
+RAD_IRQ
+Text Notes 4050 4300 0    50   ~ 0
+HWB to permit bootloader use
+Text Notes 4000 4750 0    50   ~ 0
+GND for diff amp input
+Text Notes 4000 2900 0    50   ~ 0
+PB7 is PCINT7
+Text Label 1900 3500 0    50   ~ 0
+USBREG
+Text Label 2050 2800 0    50   ~ 0
+AREF
+Text Label 3350 4700 0    50   ~ 0
+DIFF_GND_REF
+Text Label 3350 4300 0    50   ~ 0
+~HWB
+Text Label 1850 3200 0    50   ~ 0
+DuC+
+Wire Wire Line
+	3300 2300 3400 2300
+Wire Wire Line
+	3400 2400 3300 2400
+Wire Wire Line
+	3300 2500 3400 2500
+Wire Wire Line
+	3300 2200 3400 2200
+Wire Wire Line
+	3300 2600 3400 2600
+Wire Wire Line
+	8050 2350 8150 2350
+Wire Wire Line
+	8150 2450 8050 2450
+Wire Wire Line
+	8150 2550 8050 2550
+Wire Wire Line
+	8150 2650 8050 2650
+Wire Wire Line
+	8150 2850 8050 2850
+Wire Wire Line
+	8650 3250 8650 3350
+Wire Wire Line
+	8650 2050 8650 1950
+Wire Wire Line
+	900  3600 900  3700
+Wire Wire Line
+	900  3700 1000 3700
+Wire Wire Line
+	1000 3700 1000 3600
+Wire Wire Line
+	900  3700 900  3800
+Wire Wire Line
+	2600 5600 2700 5600
+Wire Wire Line
+	2700 5600 2700 5500
+Wire Wire Line
+	2600 5500 2600 5600
+Wire Wire Line
+	2600 5600 2600 5700
+Wire Wire Line
+	2600 1900 2600 1800
+Wire Wire Line
+	2600 1800 2700 1800
+Wire Wire Line
+	2700 1900 2700 1800
+Wire Wire Line
+	1900 3900 1900 3800
+Wire Wire Line
+	1900 3600 1900 3500
+Wire Wire Line
+	1900 3500 2100 3500
+Wire Wire Line
+	2100 3300 1700 3300
+Wire Wire Line
+	1700 3200 2100 3200
+Wire Wire Line
+	1600 2100 1600 2200
+Wire Wire Line
+	1600 2200 1700 2200
+Wire Wire Line
+	1800 5000 1800 4900
+Wire Wire Line
+	1800 5200 1800 5300
+Wire Notes Line
+	1850 5250 2150 5250
+Wire Wire Line
+	1900 2200 2000 2200
+Wire Wire Line
+	2000 2200 2000 2100
+Wire Wire Line
+	2000 2200 2100 2200
+Wire Wire Line
+	3300 3900 3400 3900
+Wire Wire Line
+	3300 3600 3600 3600
+Wire Wire Line
+	3300 3700 3600 3700
+Wire Wire Line
+	2600 1800 2600 1700
+Wire Wire Line
+	2800 1700 2800 1900
+Wire Wire Line
+	1300 3200 1500 3200
+Wire Wire Line
+	1300 3300 1500 3300
+Wire Wire Line
+	1300 3000 1350 3000
+Wire Wire Line
+	1350 2900 1350 3000
+Wire Wire Line
+	1350 3000 2100 3000
+Wire Wire Line
+	9800 4600 10100 4600
+Wire Wire Line
+	10100 4600 10100 4500
+Wire Wire Line
+	10300 4500 10300 4700
+Wire Wire Line
+	10300 4700 9800 4700
+Wire Wire Line
+	9300 2050 9300 1950
+Wire Wire Line
+	9300 2250 9300 2350
+Wire Notes Line
+	9250 2300 9050 2300
+Wire Wire Line
+	3400 4800 3300 4800
+Wire Wire Line
+	3300 4900 3400 4900
+Wire Wire Line
+	3400 5000 3300 5000
+Wire Wire Line
+	3300 5100 3400 5100
+Wire Wire Line
+	8450 4400 8350 4400
+Wire Wire Line
+	8150 2950 8050 2950
+Wire Wire Line
+	3400 3100 3300 3100
+Wire Wire Line
+	3400 2900 3300 2900
+Wire Wire Line
+	3400 4300 3300 4300
+Wire Wire Line
+	2000 2800 2100 2800
+Wire Wire Line
+	1800 2800 1700 2800
+Wire Wire Line
+	3300 4700 3400 4700
+Wire Wire Line
+	3600 4700 3700 4700
+Wire Wire Line
+	3600 4300 3700 4300
+Wire Wire Line
+	3400 3200 3300 3200
+Wire Wire Line
+	3300 2800 3400 2800
+Wire Wire Line
+	8350 4500 8450 4500
+Wire Wire Line
+	8350 4600 8450 4600
+Wire Wire Line
+	8350 4700 8450 4700
+Wire Wire Line
+	8350 4800 8450 4800
+Wire Wire Line
+	8350 4900 8450 4900
+Connection ~ 900  3700
+Connection ~ 2600 5600
+Connection ~ 2000 2200
+Connection ~ 2600 1800
+Connection ~ 1350 3000
+NoConn ~ 1300 3400
+NoConn ~ 2100 2400
+NoConn ~ 2100 2600
+NoConn ~ 3300 2700
+NoConn ~ 3300 4100
+NoConn ~ 3300 4400
+NoConn ~ 3300 4600
+NoConn ~ 3300 3800
+NoConn ~ 3300 3500
+NoConn ~ 3300 3400
+$Comp
+L Connector:TestPoint_Flag TP9
+U 1 1 5C98A28E
+P 3600 4000
+F 0 "TP9" H 3859 4096 50  0000 L CNN
+F 1 "DEBUG" H 4150 4100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3800 4000 50  0001 C CNN
+F 3 "~" H 3800 4000 50  0001 C CNN
+F 4 "-" H 0   300 50  0001 C CNN "MFR"
+F 5 "-" H 0   300 50  0001 C CNN "MPN"
+F 6 "-" H 0   300 50  0001 C CNN "SPR"
+F 7 "-" H 0   300 50  0001 C CNN "SPN"
+F 8 "-" H 0   300 50  0001 C CNN "SPURL"
+	1    3600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U41
+U 1 1 5C754575
+P 2700 3700
+F 0 "U41" H 2700 1814 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 2700 1723 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 2700 3700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2700 3700 50  0001 C CNN
+F 4 "Microchip" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "Samples" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4000 3600 4000
+Text Notes 4000 3100 0    50   ~ 0
+(PC6 is INT6) - It's not, this should be PE6!
+Text Notes 9600 2450 0    50   ~ 0
+This needs an inductor,\nand way more capacitance,\non the supply line!
+Text Notes 4450 4000 0    50   ~ 0
+An LED on this pin would be very useful!
+$EndSCHEMATC
